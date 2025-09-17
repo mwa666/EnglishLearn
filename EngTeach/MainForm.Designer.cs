@@ -73,7 +73,6 @@ namespace EngTeach
 			this.Controls.Add(this.LearnWords);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.MinimizeBox = false;
 			this.Name = "MainForm";
 			this.Text = "EngTeach";
 			this.ResumeLayout(false);

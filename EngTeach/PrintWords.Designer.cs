@@ -45,7 +45,6 @@ namespace EngTeach
 			this.ClientSize = new System.Drawing.Size(284, 261);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.MinimizeBox = false;
 			this.Name = "PrintWords";
 			this.Text = "CrossWords";
 			this.ResumeLayout(false);

@@ -8,3 +8,13 @@ C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTe
 C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.pdb
 C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.LearnWords.resources
 C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.PrintWords.resources
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\bin\Debug\EngTeach.exe.config
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\bin\Debug\EngTeach.exe
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\bin\Debug\EngTeach.pdb
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\obj\Debug\EngTeach.csprojResolveAssemblyReference.cache
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\obj\Debug\EngTeach.LearnWords.resources
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\obj\Debug\EngTeach.MainForm.resources
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\obj\Debug\EngTeach.PrintWords.resources
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\obj\Debug\EngTeach.csproj.GenerateResource.Cache
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\obj\Debug\EngTeach.exe
+E:\GitHub\EngTeach\EnglishLearn\EngTeach\obj\Debug\EngTeach.pdb

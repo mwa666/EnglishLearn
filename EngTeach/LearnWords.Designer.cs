@@ -140,7 +140,6 @@ namespace EngTeach
 			this.Controls.Add(this.var1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.MinimizeBox = false;
 			this.MinimumSize = new System.Drawing.Size(315, 228);
 			this.Name = "LearnWords";
 			this.Text = "LearnWords";

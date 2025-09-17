@@ -1,0 +1,10 @@
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\bin\Debug\EngTeach.exe.config
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\bin\Debug\EngTeach.exe
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\bin\Debug\EngTeach.pdb
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.csprojResolveAssemblyReference.cache
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.MainForm.resources
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.csproj.GenerateResource.Cache
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.exe
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.pdb
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.LearnWords.resources
+C:\Users\mwa66\OneDrive\Documents\SharpDevelop Projects\EngTeach\obj\Debug\EngTeach.PrintWords.resources

@@ -30,7 +30,7 @@ namespace EngTeach
 		
 		void CrossWordsClick(object sender, EventArgs e)
 		{
-			OpenFormPW(new PrintWords());
+			OpenFormPW(new PrintWords(words));
 		}
 		
 		private void OpenFormLW(Form form)

@@ -19,7 +19,7 @@ namespace EngTeach
 			InitializeComponent();
 			// Dictionary<int, string>
 //			var lines = ReadMultipleLines("test.txt", 1, 3, 5, 10);
-			words = ReadMultipleLines("Coraline(1).csv");
+			words = ReadMultipleLines("dictionary.csv");
 			
 		}
 		

@@ -77,6 +77,7 @@ namespace EngTeach
 			this.textBox2.Size = new System.Drawing.Size(557, 40);
 			this.textBox2.TabIndex = 2;
 			this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox2KeyPress);
 			// 
 			// answer
 			// 

@@ -51,6 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LearnVerbs.cs" />
+    <Compile Include="LearnVerbs.Designer.cs">
+      <DependentUpon>LearnVerbs.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrintWords.cs" />
     <Compile Include="PrintWords.Designer.cs">
       <DependentUpon>PrintWords.cs</DependentUpon>

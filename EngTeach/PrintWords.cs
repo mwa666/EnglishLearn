@@ -12,41 +12,27 @@ namespace EngTeach
 	public partial class PrintWords : Form
 	{
 		
-		public int[] numbers;
+		public int[] numbers1;
 		public Dictionary<int, string> words1;
 		public int indexWord = 0;
 		string[] needword;
 		
-		public PrintWords(Dictionary<int, string> words)
+		public PrintWords(Dictionary<int, string> words, int[] numbers)
 		{
 			words1 = words;
-			
+			numbers1 = numbers;
+				
 			Random random = new Random();
 			
 			indexWord = random.Next(0, 4);
 			
-			numbers = GenerateUniqueRandomNumbers(0, (words1.Count - 1), 10);
+//			numbers = GenerateUniqueRandomNumbers(0, (words1.Count - 1), 10);
 			
 			InitializeComponent();
 			
 			needword = words1.ElementAt(numbers[indexWord]).Value.Split(';');
 			textBox1.Text = needword[1].ToUpper();
 			
-		}
-		
-		public int[] GenerateUniqueRandomNumbers(int min, int max, int count = 10)
-		{
-			if (max - min + 1 < count)
-				throw new ArgumentException("Диапазон слишком мал для генерации уникальных чисел");
-    
-			Random random = new Random();
-			HashSet<int> numbers = new HashSet<int>();
-    
-			while (numbers.Count < count) {
-				numbers.Add(random.Next(min, max + 1));
-			}
-    
-			return numbers.ToArray();
 		}
 		
 		public void CheckWord(object sender, EventArgs e)
@@ -56,15 +42,15 @@ namespace EngTeach
 			
 				Random random = new Random();
 			
-				for (int i = numbers.Length - 1; i > 0; i--) {
+				for (int i = numbers1.Length - 1; i > 0; i--) {
 					int j = random.Next(0, i + 1);
-					int temp = numbers[i];
-					numbers[i] = numbers[j];
-					numbers[j] = temp;
+					int temp = numbers1[i];
+					numbers1[i] = numbers1[j];
+					numbers1[j] = temp;
 				}
 
 				indexWord = random.Next(0, 4);
-				needword = words1.ElementAt(numbers[indexWord]).Value.Split(';');
+				needword = words1.ElementAt(numbers1[indexWord]).Value.Split(';');
 				textBox1.Text = needword[1].ToUpper();
 				textBox2.Text = "";
 	
@@ -91,15 +77,15 @@ namespace EngTeach
 			
 					Random random = new Random();
 			
-					for (int i = numbers.Length - 1; i > 0; i--) {
+					for (int i = numbers1.Length - 1; i > 0; i--) {
 						int j = random.Next(0, i + 1);
-						int temp = numbers[i];
-						numbers[i] = numbers[j];
-						numbers[j] = temp;
+						int temp = numbers1[i];
+						numbers1[i] = numbers1[j];
+						numbers1[j] = temp;
 					}
 
 					indexWord = random.Next(0, 4);
-					needword = words1.ElementAt(numbers[indexWord]).Value.Split(';');
+					needword = words1.ElementAt(numbers1[indexWord]).Value.Split(';');
 					textBox1.Text = needword[1].ToUpper();
 					textBox2.Text = "";
 	

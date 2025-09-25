@@ -12,25 +12,33 @@ namespace EngTeach
 	public partial class MainForm : Form
 	{
 		public Dictionary<int, string> words = new Dictionary<int, string>();
+		public Dictionary<int, string> verbs = new Dictionary<int, string>();
+		
+		public int[] numbersWords;
+		public int[] numbersVerbs;
 		
 		public MainForm()
 		{
 
 			InitializeComponent();
-			// Dictionary<int, string>
-//			var lines = ReadMultipleLines("test.txt", 1, 3, 5, 10);
+
 			words = ReadMultipleLines("dictionary.csv");
+			verbs = ReadMultipleLines("dictionary.csv");
+			
+			numbersWords = GenerateUniqueRandomNumbers(0, (words.Count - 1), 10);
+			numbersVerbs = GenerateUniqueRandomNumbers(0, (verbs.Count - 1), 10);
+
 			
 		}
 		
 		void LearnWordsClick(object sender, EventArgs e)
 		{
-			OpenFormLW(new LearnWords(words));
+			OpenFormLW(new LearnWords(words, numbersWords));
 		}
 		
 		void CrossWordsClick(object sender, EventArgs e)
 		{
-			OpenFormPW(new PrintWords(words));
+			OpenFormPW(new PrintWords(words, numbersWords));
 		}
 		
 		private void OpenFormLW(Form form)
@@ -43,6 +51,15 @@ namespace EngTeach
 		}
 		
 		private void OpenFormPW(Form form)
+		{
+			// Подписываемся на событие закрытия формы
+			form.FormClosed += (s, args) => this.Show();
+            
+			this.Hide(); // Скрываем главное окно
+			form.Show(); // Показываем новое окно
+		}
+		
+		private void OpenFormLV(Form form)
 		{
 			// Подписываемся на событие закрытия формы
 			form.FormClosed += (s, args) => this.Show();
@@ -72,6 +89,28 @@ namespace EngTeach
     
 			return result;
 		}
+		
+		public int[] GenerateUniqueRandomNumbers(int min, int max, int count = 10)
+		{
+			if (max - min + 1 < count)
+				throw new ArgumentException("Диапазон слишком мал для генерации уникальных чисел");
+    
+			Random random = new Random();
+			HashSet<int> numbers = new HashSet<int>();
+    
+			while (numbers.Count < count) {
+				numbers.Add(random.Next(min, max + 1));
+			}
+    
+			return numbers.ToArray();
+		}
+		
+		void LearnVerbsClick(object sender, EventArgs e)
+		{
+			OpenFormLV(new LearnVerbs(verbs, numbersVerbs));
+		}
+		
+		
 		
 	}
 }
